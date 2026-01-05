@@ -184,8 +184,9 @@ jobs:
           submodules: recursive
           ref: ${{ env.TARGET_BRANCH }}
 
+            # Customize Loop: Download and apply patches
             - name: Customize Loop
-        run: |
+              run: |
 
           # LoopWorkspace patches
           # -applies any patches located in the LoopWorkspace/patches/ directory
